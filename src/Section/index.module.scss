@@ -1,0 +1,30 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--cv--white, rgb(255, 255, 255));
+    flex: 5;
+    font-size: 24px;
+    h2 {
+        margin: 20px;
+        background-color: var(--cv--light-gray, rgb(188, 188, 188));
+        text-transform: uppercase;
+        font-size: 32px;
+        color: var(--cv--braun, rgb(85, 39, 8));
+    }
+    .EducationBackground, .WorkExperience {
+        width: 100%;
+    }
+    .EducationBackground{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:768px) {
+    .Section {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}

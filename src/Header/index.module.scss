@@ -1,0 +1,45 @@
+.Header {
+    background-color: var(--cv--dark-gray, rgb(149, 145, 145));
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .HeaderName {
+        text-transform: uppercase;
+        color: var(--cv--white, rgb(255, 255, 255));
+        font-size: 48px;
+    }
+    
+    .HeaderImage {
+        position: absolute;
+        border: 5px solid var(--cv--white, rgb(255, 255, 255));
+        top:30px;
+        left:70px;
+        height: 250px;
+        width: auto;
+        z-index: 1;
+    }
+}
+
+@media (max-width:768px) {
+    .Header {
+        width: 100%;
+        height: 150px;
+        flex-wrap:wrap-reverse;
+        justify-content: end;
+        align-items: center;    
+        .HeaderName {
+            font-size: 26px;
+            overflow-wrap: normal;
+            width: 200px; 
+        }
+        .HeaderImage {
+            height: 125px;
+            top: 35px;
+            left: 35px;
+        } 
+    }    
+}
+

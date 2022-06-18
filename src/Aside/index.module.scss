@@ -1,0 +1,52 @@
+.Aside {
+    flex: 1.8;
+    margin-top: -70px;
+    margin-left: 50px;
+    background-color: var(--cv--light-gray, rgb(188, 188, 188));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 0;
+    h2{
+        text-transform: uppercase;
+        font-size: 26px;
+        color: var(--cv--braun, rgb(85, 39, 8));
+    }
+
+    .CoreSkills, .Languages, .ContactInfo {
+        div {
+            margin-bottom: 15px;
+        }
+    }
+    
+    .Skills {
+        margin: 150px auto ;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    
+    .Languages{
+        margin-top: 50px;
+    }
+    
+    .ContactInfo{
+        h2 {
+            margin-left: 50px;
+        }
+        div {
+            margin-left: 25px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Aside {
+        margin-top: 10px;
+        width: 80%;
+
+        .Skills {
+            margin: 0 auto ;
+        }
+    }
+}
